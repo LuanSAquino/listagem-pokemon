@@ -1,0 +1,13 @@
+/*Padrão para editar o site melhor, padding tirar o espaço do meio | Margin tirar a borda */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+/*tirar a bolinha do começo da lista*/
+ul{
+    list-style: none;
+}

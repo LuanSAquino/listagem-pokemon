@@ -1,0 +1,164 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Limitar espaçamento do corpo */
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: rgb(161, 161, 161);
+    color: rgb(107, 107, 107);
+    transition: all 0.8s ease-in-out;
+}
+
+/* Cabeçalho */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+header .logo,
+header .imagem-botao {
+    width: 35px;
+    transition: .3s ease-in-out;
+}
+
+/* Aumentar a img qnd passar o mouse por cima */
+header .imagem-botao:hover,
+header .logo:hover {
+        transform: scale(1.05);
+    cursor: pointer;
+}
+
+header h1 {
+    text-shadow: 1px 1px gray;
+    font-weight: 900;
+    color: rgb(37, 29, 29);
+    text-shadow: 1px 1px 1px rgb(85, 85, 85);
+}
+
+/* Listagem */
+main {
+    padding: 25px;
+}
+
+.listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cartao-pokemon {
+    border-radius: 10px;
+    background-color: rgb(153, 171, 184);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Soma com a transition */
+.cartao-pokemon:hover {
+    background-color: rgb(114, 157, 189);
+    transform: scale(1.02);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+.cartao-pokemon .informacoes span {
+    padding: 2px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.cartao-pokemon img {
+    width: 90px;
+    height: 90px;
+}
+
+/* Tipos */
+.cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+    padding: 3px;
+    border-radius: 10px;
+    color: rgb(204, 204, 204);
+}
+
+.tipograma {
+    background-color: rgb(23, 243, 23);
+    border-radius: 10px;
+    padding: 2px;
+    padding-inline: 4px;
+}
+
+.tipoveneno {
+    background-color: rgb(173, 38, 173);
+    border-radius: 10px;
+    padding: 2px;
+    padding-inline: 4px;
+}
+
+.tipofogo {
+    background-color: rgb(214, 15, 15);
+    border-radius: 10px;
+    padding: 2px;
+    padding-inline: 4px;
+
+}
+
+.tipoagua {
+    background-color: rgb(0, 102, 255);
+    border-radius: 10px;
+    padding: 2px;
+    padding-inline: 4px;
+}
+
+/* Caixa de texto | Scroll e font-size*/
+
+.descricao {
+    max-height: 90px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+/* Transição cor do background */
+.modo-escuro {
+    background-color: rgb(46, 48, 48); 
+    color: rgb(255, 255, 255);
+    transition: all 0.8s ease-in-out;
+}   
+
+.modo-escuro header h1{
+    transition: all 0.8s ease-in-out;
+    color: rgb(139, 139, 139);
+}
+
+.modo-escuro .cartao-pokemon {
+    background-color: rgb(73, 73, 73);
+    transition: all 0.8s ease-in-out;
+    color: rgb(190, 190, 190);
+}
+
+.modo-escuro .informacoes span{
+    color: rgb(196, 196, 196);
+    transition: all 0.8s ease-in-out;
+}
+
+.modo-escuro .informacoes{
+    border-color: rgb(110, 110, 110);
+}
